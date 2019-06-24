@@ -1,0 +1,23 @@
+$base-color: #1965AB;
+
+.save-compare {
+	.save-title {
+		float: right;
+		margin-top: -70px;
+		padding: .5rem;
+	}
+	.save-content {
+		padding: 1.5rem;
+		margin-top: 30px;
+
+		.fas {
+			color: $base-color;
+			margin: 15px;
+			font-size: xx-large;
+
+			&.opacity {
+				color: lighten($base-color, 40%);
+			}
+		}
+	}
+}

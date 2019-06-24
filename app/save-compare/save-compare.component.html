@@ -1,0 +1,40 @@
+<div class="save-compare">
+	<ngb-tabset type="pills">
+	  <ngb-tab>
+	  	<ng-template ngbTabTitle><i class="fas fa-car-side"></i></ng-template>
+	     <ng-template ngbTabContent>
+	     	<header class="save-title">
+        		You helped get 40 cars off the planet!
+        	</header>
+	        <div class="save-content">
+	        	<i *ngFor="let item of saveItemTwo(40); let i = index;" class="fas fa-car-side"></i>
+	        	<i *ngFor="let item of saveItemOne(40); let i = index;" class=" fas fa-car-side opacity"></i>
+	        </div>  
+	     </ng-template>
+	  </ngb-tab>
+		<ngb-tab>
+	  	<ng-template ngbTabTitle><i class="fas fa-tree"></i></ng-template>
+	  	<ng-template ngbTabContent>
+	  		<header class="save-title">
+        		You helped save 60 trees on the planet!
+        	</header>
+	     	<div class="save-content">
+	     		<i *ngFor="let item of saveItemTwo(60); let i = index;" class="fas fa-tree"></i>
+	     		<i *ngFor="let item of saveItemOne(20); let i = index;" class="fas fa-tree opacity"></i>
+	     	</div>
+			</ng-template>
+		</ngb-tab>
+		<ngb-tab>
+		  	<ng-template ngbTabTitle>CO2</ng-template>
+		  	<ng-template ngbTabContent>
+		     	<header class="save-title">
+	        		You helped us breathe 50 times better!
+	        	</header>
+		     	<div class="save-content">
+		     		<i *ngFor="let item of saveItemTwo(50); let i = index;" class="fas fa-cloud"></i>
+		     		<i *ngFor="let item of saveItemOne(30); let i = index;" class="fas fa-cloud opacity"></i>
+		     	</div>
+			</ng-template>
+		</ngb-tab>
+	</ngb-tabset>
+</div>

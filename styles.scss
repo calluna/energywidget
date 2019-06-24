@@ -1,0 +1,57 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+
+$base-color: #1965AB;
+
+/* General styling */
+a {
+	color: $base-color;
+}
+/* cards */
+.card {
+	overflow: hidden;
+
+	.card-header {
+		background-color: lighten($base-color, 60%);
+	}
+
+	/* tabs inside cards */
+	.tab-pane {
+
+		&.active .save-content {
+		    animation: slide-up 1s ease-out;
+		}
+
+		@keyframes slide-up {
+		    0% {
+		    	opacity: 0; transform: translateY(100%);
+		    }
+		    100% {
+		    	opacity: 1; transform: translateY(0);
+		    }
+		}
+	}
+	.nav-link {
+
+
+		&.active {
+		    animation: fadeIn ease 1s;
+		}
+
+		@keyframes fadeIn {
+		   0% {
+		   	opacity: 0;
+		   }
+		   100% {
+		   	opacity: 1;
+		   }
+		} 
+	}
+	.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+		background-color: $base-color;
+	}
+	.progress-bar.bg-custom {
+		background-color: $base-color;
+	}
+}
+

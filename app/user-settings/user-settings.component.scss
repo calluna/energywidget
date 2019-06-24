@@ -1,0 +1,22 @@
+$base-color: #1965AB;
+
+.user-settings {
+
+	.card-body {
+
+		.fa-cog {
+				color: $base-color;
+			}
+
+		ul {
+
+    		li.active {
+				color: $base-color;
+			}
+			a {
+				text-decoration: underline;
+				color: inherit;
+			}
+		}
+	}
+}

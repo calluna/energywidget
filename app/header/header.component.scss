@@ -1,0 +1,16 @@
+$base-color: #1965AB;
+
+header {
+	background-color: $base-color;
+	color: white;
+	margin-bottom: 20px;
+
+	.logo {
+		height: 50px;
+		width: 50px;
+	}
+	.logout {
+		font-size: x-large;
+		color: white;
+	}
+}
